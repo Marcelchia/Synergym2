@@ -7,3 +7,363 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 19ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 2639)
 
 
+Started GET "/onepage/index" for ::1 at 2020-06-09 18:09:31 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+  Rendered onepage/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 374)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/apple/projectSamples/Synergym/public/packs
+[Webpacker] Hash: 4ae679dbc7ac4ba16a78
+Version: webpack 4.43.0
+Time: 6186ms
+Built at: 06/09/2020 6:09:39 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-cd9baa997ab2a6e5febb.js   70.9 KiB  application  [emitted] [immutable]  application
+js/application-cd9baa997ab2a6e5febb.js.map   80.2 KiB  application  [emitted] [dev]        application
+    js/hello_react-daf64e49b10a83f1376d.js   1.05 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-daf64e49b10a83f1376d.js.map   1.21 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-cd9baa997ab2a6e5febb.js js/application-cd9baa997ab2a6e5febb.js.map
+Entrypoint hello_react = js/hello_react-daf64e49b10a83f1376d.js js/hello_react-daf64e49b10a83f1376d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 17 hidden modules
+
+Completed 200 OK in 8531ms (Views: 8526.9ms | ActiveRecord: 0.0ms | Allocations: 17018)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-09 18:11:06 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+  Rendered onepage/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 374)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 0.0ms | Allocations: 8272)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-09 18:21:03 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered onepage/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1626)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 5919)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-09 18:21:20 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered onepage/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1623)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 5913)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-09 18:21:22 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered onepage/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 1508)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 4878)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-09 18:42:24 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/apple/projectSamples/Synergym/public/packs
+[Webpacker] Hash: d2fe959827e97184d409
+Version: webpack 4.43.0
+Time: 1868ms
+Built at: 06/09/2020 6:42:28 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-cd9baa997ab2a6e5febb.js   70.9 KiB  application  [emitted] [immutable]  application
+js/application-cd9baa997ab2a6e5febb.js.map   80.2 KiB  application  [emitted] [dev]        application
+    js/hello_react-72a3af77ace3d317c83b.js   1.05 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-72a3af77ace3d317c83b.js.map   1.21 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-cd9baa997ab2a6e5febb.js js/application-cd9baa997ab2a6e5febb.js.map
+Entrypoint hello_react = js/hello_react-72a3af77ace3d317c83b.js js/hello_react-72a3af77ace3d317c83b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 954 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+  Rendered onepage/index.html.erb within layouts/application (Duration: 4121.0ms | Allocations: 2574)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4135ms (Views: 4133.7ms | ActiveRecord: 0.0ms | Allocations: 6893)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-09 18:50:01 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/apple/projectSamples/Synergym/public/packs
+[Webpacker] Hash: ed168c5620fbc8afff89
+Version: webpack 4.43.0
+Time: 1934ms
+Built at: 06/09/2020 6:50:05 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-cd9baa997ab2a6e5febb.js   70.9 KiB  application  [emitted] [immutable]  application
+js/application-cd9baa997ab2a6e5febb.js.map   80.2 KiB  application  [emitted] [dev]        application
+    js/hello_react-4d1597cbb31b3b7c349a.js   1.06 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-4d1597cbb31b3b7c349a.js.map   1.21 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-cd9baa997ab2a6e5febb.js js/application-cd9baa997ab2a6e5febb.js.map
+Entrypoint hello_react = js/hello_react-4d1597cbb31b3b7c349a.js js/hello_react-4d1597cbb31b3b7c349a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 954 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 19 hidden modules
+
+  Rendered onepage/index.html.erb within layouts/application (Duration: 4155.3ms | Allocations: 2444)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4170ms (Views: 4169.4ms | ActiveRecord: 0.0ms | Allocations: 5838)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-09 18:50:55 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/apple/projectSamples/Synergym/public/packs
+[Webpacker] Hash: 6fcf675310ec5935a487
+Version: webpack 4.43.0
+Time: 1634ms
+Built at: 06/09/2020 6:50:58 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-cd9baa997ab2a6e5febb.js   70.9 KiB  application  [emitted] [immutable]  application
+js/application-cd9baa997ab2a6e5febb.js.map   80.2 KiB  application  [emitted] [dev]        application
+    js/hello_react-bb70007a67ddd7de599f.js   1.06 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-bb70007a67ddd7de599f.js.map   1.21 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-cd9baa997ab2a6e5febb.js js/application-cd9baa997ab2a6e5febb.js.map
+Entrypoint hello_react = js/hello_react-bb70007a67ddd7de599f.js js/hello_react-bb70007a67ddd7de599f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 954 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 19 hidden modules
+
+  Rendered onepage/index.html.erb within layouts/application (Duration: 3273.6ms | Allocations: 2442)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3286ms (Views: 3285.4ms | ActiveRecord: 0.0ms | Allocations: 5829)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-09 18:52:42 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/apple/projectSamples/Synergym/public/packs
+[Webpacker] Hash: 505710e7fb1c3a4c6997
+Version: webpack 4.43.0
+Time: 1941ms
+Built at: 06/09/2020 6:52:47 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-cd9baa997ab2a6e5febb.js   70.9 KiB  application  [emitted] [immutable]  application
+js/application-cd9baa997ab2a6e5febb.js.map   80.2 KiB  application  [emitted] [dev]        application
+    js/hello_react-61738d6bfb4ecbff3dc2.js   1.06 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-61738d6bfb4ecbff3dc2.js.map   1.21 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-cd9baa997ab2a6e5febb.js js/application-cd9baa997ab2a6e5febb.js.map
+Entrypoint hello_react = js/hello_react-61738d6bfb4ecbff3dc2.js js/hello_react-61738d6bfb4ecbff3dc2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 955 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 19 hidden modules
+
+  Rendered onepage/index.html.erb within layouts/application (Duration: 4466.6ms | Allocations: 2443)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4479ms (Views: 4479.1ms | ActiveRecord: 0.0ms | Allocations: 5832)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-09 18:53:26 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/apple/projectSamples/Synergym/public/packs
+[Webpacker] Hash: 98a9662fb2913196dca5
+Version: webpack 4.43.0
+Time: 1438ms
+Built at: 06/09/2020 6:53:29 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-cd9baa997ab2a6e5febb.js   70.9 KiB  application  [emitted] [immutable]  application
+js/application-cd9baa997ab2a6e5febb.js.map   80.2 KiB  application  [emitted] [dev]        application
+    js/hello_react-330a6f7b32c5d26a2b0c.js   1.06 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-330a6f7b32c5d26a2b0c.js.map   1.21 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-cd9baa997ab2a6e5febb.js js/application-cd9baa997ab2a6e5febb.js.map
+Entrypoint hello_react = js/hello_react-330a6f7b32c5d26a2b0c.js js/hello_react-330a6f7b32c5d26a2b0c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 994 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 19 hidden modules
+
+  Rendered onepage/index.html.erb within layouts/application (Duration: 3039.2ms | Allocations: 2440)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3052ms (Views: 3051.9ms | ActiveRecord: 0.0ms | Allocations: 5829)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-09 18:55:08 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/apple/projectSamples/Synergym/public/packs
+[Webpacker] Hash: 1a2e15510dec7b0bfc49
+Version: webpack 4.43.0
+Time: 1455ms
+Built at: 06/09/2020 6:55:11 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-cd9baa997ab2a6e5febb.js   70.9 KiB  application  [emitted] [immutable]  application
+js/application-cd9baa997ab2a6e5febb.js.map   80.2 KiB  application  [emitted] [dev]        application
+    js/hello_react-5abcd38259016a4dc6d1.js   1.06 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-5abcd38259016a4dc6d1.js.map   1.21 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-cd9baa997ab2a6e5febb.js js/application-cd9baa997ab2a6e5febb.js.map
+Entrypoint hello_react = js/hello_react-5abcd38259016a4dc6d1.js js/hello_react-5abcd38259016a4dc6d1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 954 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 19 hidden modules
+
+  Rendered onepage/index.html.erb within layouts/application (Duration: 3128.1ms | Allocations: 2442)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3137ms (Views: 3136.3ms | ActiveRecord: 0.0ms | Allocations: 5828)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-09 18:58:47 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/apple/projectSamples/Synergym/public/packs
+[Webpacker] Hash: 7a3ba8d09fc02217c5e8
+Version: webpack 4.43.0
+Time: 1932ms
+Built at: 06/09/2020 6:58:51 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-cd9baa997ab2a6e5febb.js   70.9 KiB  application  [emitted] [immutable]  application
+js/application-cd9baa997ab2a6e5febb.js.map   80.2 KiB  application  [emitted] [dev]        application
+    js/hello_react-c950907d4f33d9451093.js   1.06 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-c950907d4f33d9451093.js.map   1.21 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-cd9baa997ab2a6e5febb.js js/application-cd9baa997ab2a6e5febb.js.map
+Entrypoint hello_react = js/hello_react-c950907d4f33d9451093.js js/hello_react-c950907d4f33d9451093.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 954 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 19 hidden modules
+
+  Rendered onepage/index.html.erb within layouts/application (Duration: 4383.6ms | Allocations: 2443)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4394ms (Views: 4393.1ms | ActiveRecord: 0.0ms | Allocations: 5832)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-09 19:14:04 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/apple/projectSamples/Synergym/public/packs
+[Webpacker] Hash: aabcd28063cff64d468c
+Version: webpack 4.43.0
+Time: 2050ms
+Built at: 06/09/2020 7:14:09 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-cd9baa997ab2a6e5febb.js   70.9 KiB  application  [emitted] [immutable]  application
+js/application-cd9baa997ab2a6e5febb.js.map   80.2 KiB  application  [emitted] [dev]        application
+    js/hello_react-5e4dbe03be231fd1c3d1.js   1.06 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-5e4dbe03be231fd1c3d1.js.map   1.21 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-cd9baa997ab2a6e5febb.js js/application-cd9baa997ab2a6e5febb.js.map
+Entrypoint hello_react = js/hello_react-5e4dbe03be231fd1c3d1.js js/hello_react-5e4dbe03be231fd1c3d1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 954 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 19 hidden modules
+
+  Rendered onepage/index.html.erb within layouts/application (Duration: 4445.0ms | Allocations: 2448)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4492ms (Views: 4491.3ms | ActiveRecord: 0.0ms | Allocations: 11263)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-09 19:14:41 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered onepage/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1526)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 41.5ms | ActiveRecord: 0.0ms | Allocations: 10395)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-09 19:16:56 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/apple/projectSamples/Synergym/public/packs
+[Webpacker] Hash: 5b7093c072867ef90941
+Version: webpack 4.43.0
+Time: 1582ms
+Built at: 06/09/2020 7:16:59 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-cd9baa997ab2a6e5febb.js   70.9 KiB  application  [emitted] [immutable]  application
+js/application-cd9baa997ab2a6e5febb.js.map   80.2 KiB  application  [emitted] [dev]        application
+    js/hello_react-53898ee099dddbd0bc5c.js   1.06 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-53898ee099dddbd0bc5c.js.map   1.21 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-cd9baa997ab2a6e5febb.js js/application-cd9baa997ab2a6e5febb.js.map
+Entrypoint hello_react = js/hello_react-53898ee099dddbd0bc5c.js js/hello_react-53898ee099dddbd0bc5c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 717 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 954 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 19 hidden modules
+
+  Rendered onepage/index.html.erb within layouts/application (Duration: 3205.4ms | Allocations: 2442)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3243ms (Views: 3241.5ms | ActiveRecord: 0.0ms | Allocations: 11548)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-09 19:18:08 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered onepage/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 1640)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.0ms | Allocations: 6038)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-09 19:18:11 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered onepage/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1526)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 4948)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-09 19:18:33 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered onepage/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1639)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 5996)
+
+
