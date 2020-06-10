@@ -5,16 +5,12 @@ class UsersController < ApplicationController
   def show_dashboard
 
 
-    @participating_games = group_by_day(current_user.games)
-    @hosting_games = group_by_day(Game.where(host_id: current_user.id))
-    #Edit links here for navbar
-    @links = [{:name => "Home", :path => root_path}, {:name => "Host a Game", :path => new_game_path}, {:name => "Join a Game", :path => categories_path}]
 
   end
 
   def show_profile
     @user = current_user
-    @links = [{:name => "Host a Game", :path => new_game_path}, {:name => "Join a Game", :path => categories_path}, {:name => "Dashboard", :path => dashboard_path}]
+
   end
 
   def edit
