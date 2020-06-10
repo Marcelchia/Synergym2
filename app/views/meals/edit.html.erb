@@ -1,0 +1,36 @@
+<body class="customereditbody">
+	<div class="container">
+<h1 class="customereditheading">Edit Your Profile</h1>
+<div class="customereditform">
+<%= form_with scope: :user, model: @user, local: true do |form| %>
+
+  <p>
+    <strong><%= form.label :name %><br></strong>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <strong><%= form.label :address %><br></strong>
+    <%= form.text_area :address %>
+  </p>
+
+  <p>
+    <strong><%= form.label :lisence_number %><br></strong>
+    <%= form.text_field :lisence_number %>
+  </p>
+
+  <p>
+    <strong><%= form.label :lisence_expiry %><br></strong>
+    <%= form.text_field :lisence_expiry %>
+  </p>
+  <p>
+    <%= form.submit class: "btn btn-dark"%>
+  </p>
+
+<% end %>
+</div>
+<div class ="backbutton">
+<%= button_to 'Back', root_path , method: :get, class:"btn btn-dark btn-lg" %>
+</div>
+</div>
+</body>

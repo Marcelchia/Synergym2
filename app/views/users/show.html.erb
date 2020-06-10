@@ -1,0 +1,50 @@
+<body class="userbody">
+	<div class = "container">
+	<div class=" jumbotron customerbody" >
+		<p class="usertext">
+		  <strong>Name:</strong>
+
+		  <%= @user.name %>
+
+		</p>
+
+		<p class="usertext">
+		  <strong>Height</strong>
+		    <%= @user.height %>
+		</p>
+
+		<p class="usertext">
+		  <strong>Weight:</strong>
+		    <%= @user.weight %>
+		</p>
+
+
+
+		<p class="usertext">
+		  <strong>BMI:</strong>
+
+		</p>
+
+
+		<p class="usertext">
+		  <strong>Goals:</strong>
+
+		</p>
+
+
+		<p class="usertext">
+		  <strong>Protein required:</strong>
+
+		</p>
+
+
+		<button class="btn btn-dark"><%= link_to 'Edit', update_profile_path , class:"buttontext" %></button>
+
+
+
+
+
+
+	</div>
+	</div>
+</body>

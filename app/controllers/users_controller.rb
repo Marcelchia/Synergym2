@@ -2,18 +2,14 @@ class UsersController < ApplicationController
   before_action :check_user
   helper_method :group_by_day
 
-  def show_dashboard
 
-
-
-  end
-
-  def show_profile
+  def show
     @user = current_user
 
   end
 
   def edit
+      @user = current_user
   end
 
   def update
@@ -29,7 +25,7 @@ class UsersController < ApplicationController
     end
 
     def user_params
-      params.require(:user).permit(:name, :avatar)
+      params.require(:user).permit(:name, :weight, :height)
     end
 
     def group_by_day(obj)

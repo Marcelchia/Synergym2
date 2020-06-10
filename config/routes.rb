@@ -1,20 +1,21 @@
+
 Rails.application.routes.draw do
   devise_for :users
   get 'onepage/index'
-  root to: "onepage#index"
+  root to: "onepage#index", as: 'home'
 
-  get '/profile', to: 'users#show_profile', as: 'profile'
-  put 'profile', to: 'users#update', as: 'update_profile'
+  get '/profile', to: 'users#show', as: 'profile'
+  get '/profile/edit', to: 'users#edit', as: 'update_profile'
+  patch '/profile/edit', to: 'users#update', as: 'user'
 
   get '/aboutus' => 'companyprofiles#index' , as: 'aboutus'
   get '/contactus' => 'ourcontacts#index' ,  as: 'contactus'
 
 
-#   # root 'meals#index'
-#   get '/meals' => 'meals#index', as: 'meals'
-#   get '/meals/new' => 'meals#new', as: 'new_meal'
-#   post '/meals' => 'meals#create'
-#   get '/meals/:id' => 'meals#show' , as: 'meal'
+  get '/meals' => 'meals#index', as: 'meals'
+  get '/meals/new' => 'meals#new', as: 'new_meal'
+  post '/meals' => 'meals#create'
+  get '/meals/:id' => 'meals#show' , as: 'meal'
 #   get '/meals/:id/bookings/new'=> 'bookings#new' ,as:'new_booking'
 #   get '/meals/:id/edit' => 'meals#edit', as: 'edit_meal'
 #   patch '/meals/:id' => 'meals#update'
