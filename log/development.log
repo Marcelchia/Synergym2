@@ -482,3 +482,62 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.0ms | Allocations: 7589)
 
 
+Started POST "/users/sign_in" for ::1 at 2020-06-09 23:17:08 +0800
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"rB//6BQWewOwUxRqbvgZIMQ1jJVyA+QpkC7HUamgkrFwUMFFsCCLWUJj/fT8crNVvg4SgG/wZgZWxerr0mhXhQ==", "user"=>{"email"=>"marcel@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "marcel@email.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 226ms (ActiveRecord: 12.4ms | Allocations: 15622)
+
+
+Started GET "/" for ::1 at 2020-06-09 23:17:08 +0800
+Processing by OnepageController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered onepage/index.html.erb within layouts/application (Duration: 14.6ms | Allocations: 1957)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 41.0ms | ActiveRecord: 1.6ms | Allocations: 10346)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-06-09 23:17:12 +0800
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms | Allocations: 1883)
+
+
+Started GET "/" for ::1 at 2020-06-09 23:17:22 +0800
+Processing by OnepageController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 202)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-06-09 23:17:22 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.2ms | Allocations: 660)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 17.7ms | Allocations: 3887)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 36.4ms | ActiveRecord: 0.0ms | Allocations: 8850)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-06-09 23:17:35 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"CbtWbwvHeKhOFYEInTlT0IyOG39ebTVy+4d5MJULitC4c8zaKr5qIs7yJKyZ9iS1ec/n/lJJq1xiWAuYuWlz3A==", "user"=>{"email"=>"marcel@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "marcel@email.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 156ms (ActiveRecord: 1.0ms | Allocations: 2314)
+
+
+Started GET "/" for ::1 at 2020-06-09 23:17:35 +0800
+Processing by OnepageController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered onepage/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1532)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 20.6ms | ActiveRecord: 1.2ms | Allocations: 6374)
+
+
