@@ -1,15 +1,65 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ReactWebpackerTest</title>
+    <title>Synergym</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= javascript_pack_tag 'application' %>
-  </head>
+
+    </head>
+
+
+
 
   <body>
+
+  <nav class="navbar  navbar-expand-lg navbar-dark" style="background-color:#4f4f4f;">
+
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+  <li class="nav-item ">
+        <a class="nav-link" href="/cars">Home <span class="sr-only">(current)</span></a>
+      </li>
+  <li class="nav-item  ">
+  		  <a class="nav-link" href="/aboutus">About Us <span class="sr-only">(current)</span></a>
+  	  </li>
+  <li class="nav-item ">
+  		<a class="nav-link" href="/contactus">Contact Us <span class="sr-only">(current)</span></a>
+    	</li>
+
+
+  <% if user_signed_in? %>
+
+    <li class="nav-item ">
+    <%= link_to 'Profile', "/profile" + @user.id.to_s , :class => "nav-link" %>
+    </li>
+
+    <li class="nav-item ">
+    <%= link_to 'log out', destroy_user_session_url, method: :delete , :class => "nav-link" %>
+
+    <% end %>
+
+
+    <% else %>
+      	<li><a class="nav-link" href="/users/sign_up"><span class="glyphicon glyphicon-user"></span> Sign Up/Log In</a></li>
+      <% end %>
+  </nav>
     <%= yield %>
   </body>
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+<p> Synergym</p>
+
+</div>
 </html>

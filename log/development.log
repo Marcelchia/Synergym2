@@ -541,3 +541,280 @@ Processing by OnepageController#index as HTML
 Completed 200 OK in 26ms (Views: 20.6ms | ActiveRecord: 1.2ms | Allocations: 6374)
 
 
+Started GET "/onepage/index" for ::1 at 2020-06-10 15:32:11 +0800
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.1) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/onepage/index" for ::1 at 2020-06-10 15:33:53 +0800
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/onepage/index"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/onepage/index" for ::1 at 2020-06-10 15:34:41 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered onepage/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1681)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 35.4ms | ActiveRecord: 0.0ms | Allocations: 10064)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-10 15:46:41 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered onepage/index.html.erb within layouts/application (Duration: 14.2ms | Allocations: 1533)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.0ms | Allocations: 10689)
+
+
+Started GET "/onepage/index" for ::1 at 2020-06-10 15:46:52 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered onepage/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1637)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms | Allocations: 14460)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    10:     <%= javascript_include_tag 'application' %>
+    11:     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    12:     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+    13: 
+  
+app/views/layouts/application.html.erb:10
+Started GET "/onepage/index" for ::1 at 2020-06-10 15:47:34 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered onepage/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1636)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms | Allocations: 7309)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fcce9ee2538>::Customer):
+    41: 
+    42: 
+    43:   <% if user_signed_in? %>
+    44:   <% if  Customer.where(user_id: current_user.id).any?  %>
+    45:   <% @customer = Customer.find_by(user_id: current_user.id)  %>
+    46:     <li class="nav-item ">
+    47:     <%= link_to 'View My Profile', "/customers/" + @customer.id.to_s , :class => "nav-link" %>
+  
+app/views/layouts/application.html.erb:44
+Started GET "/onepage/index" for ::1 at 2020-06-10 16:09:26 +0800
+Processing by OnepageController#index as HTML
+  Rendering onepage/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered onepage/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 1641)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 4566)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Synergym</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+
+    </head>
+
+
+
+
+  <body>
+
+  <nav class="navbar  navbar-expand-lg navbar-dark" style="background-color:#4f4f4f;">
+
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+  <li class="nav-item ">
+        <a class="nav-link" href="/cars">Home <span class="sr-only">(current)</span></a>
+      </li>
+  <li class="nav-item  ">
+  		  <a class="nav-link" href="/aboutus">About Us <span class="sr-only">(current)</span></a>
+  	  </li>
+  <li class="nav-item ">
+  		<a class="nav-link" href="/contactus">Contact Us <span class="sr-only">(current)</span></a>
+    	</li>
+
+
+  <% if user_signed_in? %>
+
+    <li class="nav-item ">
+    <%= link_to 'Profile', "/profile" + @user.id.to_s , :class => "nav-link" %>
+    </li>
+
+    <li class="nav-item ">
+    <%= link_to 'log out', destroy_user_session_url, method: :delete , :class => "nav-link" %>
+
+    <% end %>
+
+
+    <% else %>
+      	<li><a class="nav-link" href="/users/sign_up"><span class="glyphicon glyphicon-user"></span> Sign Up/Log In</a></li>
+      <% end %>
+  </nav>
+    <%= yield %>
+  </body>
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+<p> Synergym</p>
+
+</div>
+</html>
+):
+1:    
+2:    <!DOCTYPE html>
+3:    <html>
+4:      <head>
+5:        <title>Synergym</title>
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag    'application', media: 'all' %>
+10:    
+11:        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+12:        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+13:    
+14:        <%= stylesheet_link_tag 'application', media: 'all' %>
+15:        <%= javascript_pack_tag 'application' %>
+16:    
+17:        </head>
+18:    
+19:    
+20:    
+21:    
+22:      <body>
+23:    
+24:      <nav class="navbar  navbar-expand-lg navbar-dark" style="background-color:#4f4f4f;">
+25:    
+26:    
+27:      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+28:        <span class="navbar-toggler-icon"></span>
+29:      </button>
+30:      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+31:      <ul class="navbar-nav mr-auto">
+32:      <li class="nav-item ">
+33:            <a class="nav-link" href="/cars">Home <span class="sr-only">(current)</span></a>
+34:          </li>
+35:      <li class="nav-item  ">
+36:      		  <a class="nav-link" href="/aboutus">About Us <span class="sr-only">(current)</span></a>
+37:      	  </li>
+38:      <li class="nav-item ">
+39:      		<a class="nav-link" href="/contactus">Contact Us <span class="sr-only">(current)</span></a>
+40:        	</li>
+41:    
+42:    
+43:      <% if user_signed_in? %>
+44:    
+45:        <li class="nav-item ">
+46:        <%= link_to 'Profile', "/profile" + @user.id.to_s , :class => "nav-link" %>
+47:        </li>
+48:    
+49:        <li class="nav-item ">
+50:        <%= link_to 'log out', destroy_user_session_url, method: :delete , :class => "nav-link" %>
+51:    
+52:        <% end %>
+53:    
+54:    
+55:        <% else %>
+56:          	<li><a class="nav-link" href="/users/sign_up"><span class="glyphicon glyphicon-user"></span> Sign Up/Log In</a></li>
+57:          <% end %>
+58:      </nav>
+59:        <%= yield %>
+60:      </body>
+61:      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+62:    <p> Synergym</p>
+63:    
+64:    </div>
+65:    </html>
+  
+app/views/layouts/application.html.erb:67: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/layouts/application.html.erb:67: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/layouts/application.html.erb:67: syntax error, unexpected keyword_end, expecting end-of-input
+app/views/layouts/application.html.erb:67: syntax error, unexpected keyword_end, expecting end-of-input

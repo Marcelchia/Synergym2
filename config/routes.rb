@@ -1,7 +1,13 @@
-# Rails.application.routes.draw do
-#   devise_for :users
-#   get 'onepage/index'
-#   root to: "onepage#index"
+Rails.application.routes.draw do
+  devise_for :users
+  get 'onepage/index'
+  root to: "onepage#index"
+
+  get '/profile', to: 'users#show_profile', as: 'profile'
+  put 'profile', to: 'users#update', as: 'update_profile'
+
+  get '/aboutus' => 'companyprofiles#index' , as: 'aboutus'
+  get '/contactus' => 'ourcontacts#index' ,  as: 'contactus'
 
 
 #   # root 'meals#index'
@@ -28,7 +34,7 @@
 #   get 'users/:id/edit', to: 'users#edit'
 #   put 'profile', to: 'users#update', as: 'update_profile'
 #   get 'dashboard', to: 'users#show_dashboard', as: 'dashboard'
-#   get 'profile', to: 'users#show_profile', as: 'profile'
+#   get '/profile', to: 'users#show_profile', as: 'profile'
 
 
 
@@ -56,4 +62,4 @@
 # end
 
 #   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-# end
+end
