@@ -5,6 +5,23 @@ class UsersController < ApplicationController
 
   def show
     @user = current_user
+    @weight = @user.weight
+    @height = @user.height
+    @bmi = (10000*(@weight/(@height*@height))).round(2)
+    @protein = (0.8*@weight).round(2)
+    @date = Date.today
+
+    @updateddate = @user.updated_at
+    puts "================="
+    puts "================="
+    puts "================="
+
+    puts @updateddate
+    puts @time
+
+    puts "================="
+    puts "================="
+    puts "================="
 
   end
 
@@ -14,6 +31,19 @@ class UsersController < ApplicationController
 
   def update
     @user = current_user
+    @weight = @user.weight
+    @height = @user.height
+
+    puts "================="
+    puts "================="
+    puts "================="
+    puts @user
+    puts @weight
+    puts @height
+    puts "================="
+    puts "================="
+    puts "================="
+
     redirect_to profile_path if current_user.update(user_params)
   end
 

@@ -1,31 +1,20 @@
-<body class="customernewbody">
+<body class="workoutnewbody">
 	<div class="container">
 
-<h1 class="customernewheading">Enter Exercises</h1>
-<div class="customereditform">
-<%= form_with scope: :customer, url: customers_path, local: true do |form| %>
+<h1 class="workoutnewheading">Enter Exercises</h1>
+<div class="workouteditform">
+
+<%= form_with scope: :workout, url: workouts_path, local: true do |form| %>
   <p>
-    <strong><%= form.label :name %></strong><br>
-    <%= form.text_field :name %>
+    <strong><%= form.label :type %></strong><br>
+    <%= form.text_field :type %>
   </p>
 
   <p>
-    <strong><%= form.label :address %></strong><br>
-    <%= form.text_area :address %>
+    <strong><%= form.label :description %></strong><br>
+    <%= form.text_area :description %>
   </p>
 
-  <p>
-    <strong><%= form.label :lisence_number %></strong><br>
-    <%= form.text_field :lisence_number %>
-  </p>
-
-  <p>
-    <strong><%= form.label :lisence_expiry %></strong><br>
-    <%= form.text_field :lisence_expiry %>
-  </p>
-  <p class="error">
-  	<%= show_errors(@customer, :lisence_expiry) %>
-	</p>
 
 	<p>
 	  <%= form.submit class: "btn btn-dark"%>
@@ -34,7 +23,7 @@
 <% end %>
 </div>
 <div class ="backbutton">
-<%= button_to 'Back', root_path , method: :get, class:"btn btn-dark btn-lg" %>
+<%= button_to 'Back', home_path , method: :get, class:"btn btn-dark btn-lg" %>
 </div>
 </div>
 </body>

@@ -3,9 +3,17 @@ class WorkoutsController < ApplicationController
   before_action :check_user
   helper_method :group_by_day
 
+
+  def index
+    @workouts = Workout.where(user_id: params[:user_id] )
+    @type = @workouts.type
+    @description = @workouts.description
+    @date = @workouts.date
   end
 
   def new
+
+
   end
 
   def create
@@ -21,6 +29,8 @@ class WorkoutsController < ApplicationController
         #byebug
       render 'new'
   end
+
+end
 
 
 
@@ -43,11 +53,11 @@ class WorkoutsController < ApplicationController
       params.require(:user).permit(:type, :description, :date)
     end
 
+
     def group_by_day(obj)
       sort_by_day = -> ( d ) {d.start.strftime("%A, %b %d %y")}
       return obj.group_by(&sort_by_day)
     end
-
 
 
 end

@@ -1,0 +1,27 @@
+<body class="mealnewbody">
+	<div class="container">
+
+<h1 class="mealnewheading">Enter your meal</h1>
+<div class="mealeditform">
+<%= form_with scope: :customer, url: customers_path, local: true do |form| %>
+  <p>
+    <strong><%= form.label :type %></strong><br>
+    <%= form.text_field :type %>
+  </p>
+
+  <p>
+    <strong><%= form.label :description %></strong><br>
+    <%= form.text_area :description %>
+  </p>
+
+  	<p>
+	  <%= form.submit class: "btn btn-dark"%>
+	</p>
+
+<% end %>
+</div>
+<div class ="backbutton">
+<%= button_to 'Back', root_path , method: :get, class:"btn btn-dark btn-lg" %>
+</div>
+</div>
+</body>

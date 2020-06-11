@@ -5,6 +5,7 @@ class OnepageController < ApplicationController
   def index
 
       @user = current_user
+      @date = Date.today
 
   end
 end

@@ -7,20 +7,33 @@
 <p> marcel chia </p> -->
 
 
-<div>
+<h1> Today's date :
+	<%= @date %>
 
+</h1>
+
+
+
+<%= link_to href ='/meals' do %>
 
 <%= image_tag 'meals.png' ,width: 250, height: 250%>
+<% end %>
 
+
+
+
+<%= link_to href ='/workouts' do %>
 
 <%= image_tag 'workout.jpg',width: 250, height: 250%>
 
+<% end %>
+
+
+
+
+
+<%= link_to href ='/tips' do %>
+
 <%= image_tag 'tips.jpg',width: 300, height: 300 %>
 
-
-</div>
-
-
-
-
-<%= javascript_pack_tag( 'hello_react' )%>
+<% end %>

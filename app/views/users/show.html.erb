@@ -10,35 +10,44 @@
 
 		<p class="usertext">
 		  <strong>Height</strong>
-		    <%= @user.height %>
+		    <%= @user.height.to_s + "cm" %>
 		</p>
 
 		<p class="usertext">
 		  <strong>Weight:</strong>
-		    <%= @user.weight %>
+		    <%= @user.weight.to_s + "kg" %>
 		</p>
 
 
 
 		<p class="usertext">
 		  <strong>BMI:</strong>
-
-		</p>
-
-
-		<p class="usertext">
-		  <strong>Goals:</strong>
-
+		  <%=@bmi %>
 		</p>
 
 
 		<p class="usertext">
 		  <strong>Protein required:</strong>
-
+		  <%=@protein.to_s %>
 		</p>
 
 
+		<p class="usertext">
+		  <strong>Updated as of: </strong>
+		  <%=@updateddate %>
+		</p>
+
+
+
+
+
+
+
+
 		<button class="btn btn-dark"><%= link_to 'Edit', update_profile_path , class:"buttontext" %></button>
+
+
+		<%= button_to 'Back', home_path , method: :get, class:"btn btn-dark btn-lg" %>
 
 
 

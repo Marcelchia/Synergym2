@@ -1,0 +1,31 @@
+
+
+<body class="workouteditbody">
+	<div class="container">
+<h1 class="workouteditheading">Edit Your Profile</h1>
+<div class="workouteditform">
+<%= form_with scope: :workout, model: @workout, local: true do |form| %>
+
+  <p>
+    <strong><%= form.label :type %><br></strong>
+    <%= form.text_field :type %>
+  </p>
+
+  <p>
+    <strong><%= form.label :description %><br></strong>
+    <%= form.text_area :description %>
+  </p>
+
+
+  <p>
+    <%= form.submit class: "btn btn-dark"%>
+  </p>
+
+<% end %>
+</div>
+
+<div class ="backbutton">
+<%= button_to 'Back', workout_path , method: :get, class:"btn btn-dark btn-lg" %>
+</div>
+</div>
+</body>

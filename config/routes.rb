@@ -12,10 +12,28 @@ Rails.application.routes.draw do
   get '/contactus' => 'ourcontacts#index' ,  as: 'contactus'
 
 
+  get '/workouts' => 'workouts#index', as: 'workouts'
+  get '/workouts/new' => 'workouts#new', as: 'new_workout'
+  post '/workouts' => 'workouts#create'
+
+  get '/workouts/:id' => 'workouts#show' , as: 'workout'
+
+
+
+
   get '/meals' => 'meals#index', as: 'meals'
   get '/meals/new' => 'meals#new', as: 'new_meal'
   post '/meals' => 'meals#create'
   get '/meals/:id' => 'meals#show' , as: 'meal'
+
+
+  get '/tips' => 'tips#index', as: 'tips'
+
+
+
+
+
+
 #   get '/meals/:id/bookings/new'=> 'bookings#new' ,as:'new_booking'
 #   get '/meals/:id/edit' => 'meals#edit', as: 'edit_meal'
 #   patch '/meals/:id' => 'meals#update'
