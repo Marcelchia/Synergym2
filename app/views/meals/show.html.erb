@@ -1,40 +1,46 @@
-<body class="customernewbody">
-	<div class="container">
+<body class="customerbody">
+	<div class = "container">
+	<div class=" jumbotron customerbody" >
+		<p class="customertext">
+		  <strong>Type:</strong>
+		  <%= @mealtype %>
 
-<h1 class="customernewheading">Create Your Profile</h1>
-<div class="customereditform">
-<%= form_with scope: :customer, url: customers_path, local: true do |form| %>
-  <p>
-    <strong><%= form.label :name %></strong><br>
-    <%= form.text_field :name %>
-  </p>
+		</p>
 
-  <p>
-    <strong><%= form.label :address %></strong><br>
-    <%= form.text_area :address %>
-  </p>
+		<p class="customertext">
+		  <strong>Description</strong>
+		  <%= @meal.description %>
+		</p>
 
-  <p>
-    <strong><%= form.label :lisence_number %></strong><br>
-    <%= form.text_field :lisence_number %>
-  </p>
+		<p class="customertext">
+		  <strong>Date: </strong>
+		  <%= @meal.date %>
+		</p>
 
-  <p>
-    <strong><%= form.label :lisence_expiry %></strong><br>
-    <%= form.text_field :lisence_expiry %>
-  </p>
-  <p class="error">
-  	<%= show_errors(@customer, :lisence_expiry) %>
-	</p>
 
-	<p>
-	  <%= form.submit class: "btn btn-dark"%>
-	</p>
+		<br/>
+		<div class ="mealprofilebutton">
+		<div class ="row-md">
 
-<% end %>
-</div>
-<div class ="backbutton">
-<%= button_to 'Back', root_path , method: :get, class:"btn btn-dark btn-lg" %>
-</div>
-</div>
+
+		<div class ="column-md , profilesubbutton">
+
+
+		<button class="btn btn-dark"><%= link_to 'Edit', update_meal_path , class:"buttontext" %></button>
+
+
+
+		<button class="btn btn-dark"><%= link_to 'Home', home_path , class:"buttontext" %></button>
+
+
+
+		<button class="btn btn-dark"><%= link_to 'destroy', meal_path,
+		        method: :delete,
+		        data: { confirm: 'Are you sure?' }  , class:"buttontext" %></button>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
 </body>

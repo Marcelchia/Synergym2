@@ -1,32 +1,36 @@
 <body class="workoutbody">
 	<div class="container">
 		<h3 class="workoutheading">Workouts</h3>
+
+
 			<div class="customerbookingtext">
+
 				<% @workouts.each do |workout| %>
 
-		  			<li class="workoutlist">
-		  				<%= workout.type %>
-		  			</li>
+
 
 		  			<li class="workoutlist">
+		  			Type:
+		  				<%= workout.workout_category.description %>
+		  			</li>
+
+
+
+		  			<li class="workoutlist">
+		  			Description:
 		  				<%= workout.description %>
 		  			</li>
 
 		  			<li class="workoutlist">
+		  				Date:
 		  				<%= workout.date %>
 		  			</li>
 
 
 						<li class="workoutlist">
-		  				<button class="btn btn-dark"><%= link_to 'Show Details', workout_path(workout) , class:"buttontext" %></button>
+		  				<button class="btn btn-white"><%= link_to 'Show Details', workout_path(workout) , class:"buttontext" %></button>
 						</li>
 
-					<%= form_with scope: :workout, model: workout, local: true  do |form| %>
- <p>Confirm delete workout? </p>
-  <p>
-  	<%= submit_tag "Delete Workout" %>
-  </p>
-<% end %>-->
 				<% end %>
 
 			</div>

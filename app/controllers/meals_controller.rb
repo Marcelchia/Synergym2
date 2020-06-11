@@ -1,53 +1,59 @@
 class MealsController < ApplicationController
   before_action :authenticate_user!
-
-class UsersController < ApplicationController
   before_action :check_user
   helper_method :group_by_day
 
 
-  def show
-    @user = current_user
-    @weight = @user.weight
-    @height = @user.height
-    @bmi = (10000*(@weight/(@height*@height))).round(2)
-    @protein = (0.8*@weight).round(2)
-    @date = Date.today
+  def index
 
-    @updateddate = @user.updated_at
-    puts "================="
-    puts "================="
-    puts "================="
+     # @meals = Meal.where(user_id: current_user.id)
+    # @type = @workouts.type
+    # @description = @workouts.description
+    # @date = @workouts.date
+  end
 
-    puts @updateddate
-    puts @time
+  def new
+    @meals = Meal.all
+    @meal_categories = MealCategory.all
 
-    puts "================="
-    puts "================="
-    puts "================="
 
   end
 
+  def create
+    foobar = meal_params()
+
+    @meal = Meal.new(foobar)
+    @meal.user = current_user
+     # Pass in a date
+      #if (customer_params[:lisence_expiry].to_date >  Date.today+14.days)
+
+
+    if @meal.save
+      redirect_to @meal
+      else
+        #byebug
+      render 'new'
+  end
+
+end
+
+
+  def show
+
+  @meal = Meal.find(params[:id])
+  @mealtype = @meal.meal_category.description
+
+  end
+
+
   def edit
-      @user = current_user
+
+    @meal = Meal.find(params[:id])
   end
 
   def update
     @user = current_user
-    @weight = @user.weight
-    @height = @user.height
-
-    puts "================="
-    puts "================="
-    puts "================="
-    puts @user
-    puts @weight
-    puts @height
-    puts "================="
-    puts "================="
-    puts "================="
-
-    redirect_to profile_path if current_user.update(user_params)
+    redirect_to profile_path if current_user.update(meal_params)
   end
 
   private
@@ -57,15 +63,15 @@ class UsersController < ApplicationController
       end
     end
 
-    def user_params
-      params.require(:user).permit(:name, :weight, :height)
+    def meal_params
+      params.require(:meal).permit(:meal_category_id, :description, :date)
     end
+
 
     def group_by_day(obj)
       sort_by_day = -> ( d ) {d.start.strftime("%A, %b %d %y")}
       return obj.group_by(&sort_by_day)
     end
-
 
 
 end

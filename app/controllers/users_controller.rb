@@ -4,21 +4,43 @@ class UsersController < ApplicationController
 
 
   def show
-    @user = current_user
+    # @user = User.find(params[:id])
+    # @user = User.find_by_id(params[:id])
+    # @user= current_user
+    # @user = User.where(id: params [:id])
+    @user = User.find(params[:id])
+    puts "=============="
+    puts "=============="
+    puts @user
+    puts @user.weight
+    puts "=============="
+    puts "=============="
+
     @weight = @user.weight
     @height = @user.height
+
+    if @weight && @height
+
     @bmi = (10000*(@weight/(@height*@height))).round(2)
     @protein = (0.8*@weight).round(2)
+
+    else
+
+    @bmi = 0
+    @protein = 0
+
+    end
+
+
     @date = Date.today
 
     @updateddate = @user.updated_at
     puts "================="
     puts "================="
     puts "================="
-    puts
+    puts @user
     puts @updateddate
     puts @time
-
     puts "================="
     puts "================="
     puts "================="

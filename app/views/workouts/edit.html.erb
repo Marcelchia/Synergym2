@@ -2,13 +2,13 @@
 
 <body class="workouteditbody">
 	<div class="container">
-<h1 class="workouteditheading">Edit Your Profile</h1>
+<h1 class="workouteditheading">Edit Workout</h1>
 <div class="workouteditform">
 <%= form_with scope: :workout, model: @workout, local: true do |form| %>
 
   <p>
     <strong><%= form.label :type %><br></strong>
-    <%= form.text_field :type %>
+    <%= form.collection_select :workout_category_id, @workout_categories, :id, :description %>
   </p>
 
   <p>

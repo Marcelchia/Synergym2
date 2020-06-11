@@ -45,7 +45,7 @@
 
 
   	<li class="navbar-item right ">
-  		<%= link_to href ='/profile' do %>
+  		<%= link_to href ='/profile/' + current_user.id.to_s do %>
 
     <%= image_tag 'profilepic1.jpg',width: 50, height: 50 %>
 <% end %>

@@ -4,9 +4,9 @@ Rails.application.routes.draw do
   get 'onepage/index'
   root to: "onepage#index", as: 'home'
 
-  get '/profile', to: 'users#show', as: 'profile'
-  get '/profile/edit', to: 'users#edit', as: 'update_profile'
-  patch '/profile/edit', to: 'users#update', as: 'user'
+  get '/profile/:id', to: 'users#show', as: 'profile'
+  get '/profile/:id/edit', to: 'users#edit', as: 'update_profile'
+  patch '/profile/:id/edit', to: 'users#update', as: 'user'
 
   get '/aboutus' => 'companyprofiles#index' , as: 'aboutus'
   get '/contactus' => 'ourcontacts#index' ,  as: 'contactus'
@@ -15,8 +15,10 @@ Rails.application.routes.draw do
   get '/workouts' => 'workouts#index', as: 'workouts'
   get '/workouts/new' => 'workouts#new', as: 'new_workout'
   post '/workouts' => 'workouts#create'
-
+  get '/workout/:id/edit', to: 'workouts#edit', as: 'update_workout'
+  patch '/workouts/:id', to: 'workouts#update'
   get '/workouts/:id' => 'workouts#show' , as: 'workout'
+  delete '/workouts/:id' => 'workouts#destroy'
 
 
 

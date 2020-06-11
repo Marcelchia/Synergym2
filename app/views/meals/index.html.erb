@@ -1,0 +1,31 @@
+<body class="mealbody">
+	<div class="container">
+		<h3 class="mealheading">Meals</h3>
+			<div class="mealtext">
+				<% current_user.meals.each do |meal| %>
+
+		  			<li class="meallist">
+
+		  				<%= meal.meal_category.description %>
+		  			</li>
+
+		  			<li class="meallist">
+		  				<%= meal.description %>
+		  			</li>
+
+		  			<li class="meallist">
+		  				<%= meal.date %>
+		  			</li>
+
+
+						<li class="meallist">
+		  				<button class="btn btn-dark"><%= link_to 'Show Details', meal_path(meal) , class:"buttontext" %></button>
+						</li>
+
+
+				<% end %>
+
+			</div>
+	</div>
+	<%= button_to "Add meals", new_meal_path, method: :get, class: "btn btn-dark" %>
+</body>

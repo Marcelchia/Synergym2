@@ -9,4 +9,15 @@
 
 
 MealCategory.create(description: "dinner")
+MealCategory.create(description: "lunch")
+MealCategory.create(description: "breakfast")
+MealCategory.create(description: "supper")
+MealCategory.create(description: "teabreak")
+MealCategory.create(description: "snack")
+
 WorkoutCategory.create(description:"Chest")
+WorkoutCategory.create(description:"Arm")
+WorkoutCategory.create(description:"Legs")
+WorkoutCategory.create(description:"Back")
+WorkoutCategory.create(description:"Shoulder")
+WorkoutCategory.create(description:"Core")

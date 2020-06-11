@@ -1,0 +1,46 @@
+<body class="customerbody">
+	<div class = "container">
+	<div class=" jumbotron customerbody" >
+		<p class="customertext">
+		  <strong>Type:</strong>
+		  <%= @exercise %>
+
+		</p>
+
+		<p class="customertext">
+		  <strong>Description</strong>
+		  <%= @workout.description %>
+		</p>
+
+		<p class="customertext">
+		  <strong>Date: </strong>
+		  <%= @workout.date %>
+		</p>
+
+
+		<br/>
+		<div class ="workoutprofilebutton">
+		<div class ="row-md">
+
+
+		<div class ="column-md , profilesubbutton">
+
+
+		<button class="btn btn-dark"><%= link_to 'Edit', update_workout_path , class:"buttontext" %></button>
+
+
+
+		<button class="btn btn-dark"><%= link_to 'Home', home_path , class:"buttontext" %></button>
+
+
+
+		<button class="btn btn-dark"><%= link_to 'destroy', workout_path,
+		        method: :delete,
+		        data: { confirm: 'Are you sure?' }  , class:"buttontext" %></button>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</body>

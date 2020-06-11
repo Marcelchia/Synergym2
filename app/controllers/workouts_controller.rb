@@ -5,7 +5,14 @@ class WorkoutsController < ApplicationController
 
 
   def index
-    @workouts = Workout.where(user_id: params[:user_id] )
+
+    @workouts = Workout.where(user_id: current_user.id)
+     # @exercise = @workouts.workout_category.description
+
+
+
+    # @workouts = Workout.where(user_id: params[:user_id] )
+
     # @type = @workouts.type
     # @description = @workouts.description
     # @date = @workouts.date
@@ -14,6 +21,7 @@ class WorkoutsController < ApplicationController
   def new
     @workouts = Workout.all
     @workout_categories = WorkoutCategory.all
+
 
 
   end
@@ -37,15 +45,44 @@ class WorkoutsController < ApplicationController
 end
 
 
+  def show
+  @workout_categories = WorkoutCategory.all
+  @workout = Workout.find(params[:id])
+  @exercise = @workout.workout_category.description
+
+  puts "============="
+  puts "============="
+  puts @workout
+  puts "============="
+  puts "============="
+
+
+  end
+
 
   def edit
 
     @workout = Workout.find(params[:id])
+     @workout.user = current_user
+     @workout_categories = WorkoutCategory.all
+
   end
 
   def update
-    @user = current_user
-    redirect_to profile_path if current_user.update(workout_params)
+
+    @workout = Workout.find(params[:id])
+
+    redirect_to workout_path if @workout.update(workout_params)
+  end
+
+
+  def destroy
+
+  @workout = Workout.find(params[:id])
+
+         @workout.destroy
+         redirect_to workouts_path
+
   end
 
   private

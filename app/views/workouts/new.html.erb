@@ -6,12 +6,20 @@
 
 <%= form_with scope: :workout, url: workouts_path, local: true do |form| %>
   <p>
+  <strong><%= form.label :type %></strong><br>
   <%= form.collection_select :workout_category_id, @workout_categories, :id, :description %>
   </p>
 
   <p>
     <strong><%= form.label :description %></strong><br>
     <%= form.text_area :description %>
+  </p>
+
+
+  <p>
+    <strong><%= form.label :date %></strong><br>
+    <%= form.text_field :date %>
+
   </p>
 
 

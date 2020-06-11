@@ -3,15 +3,21 @@
 
 <h1 class="mealnewheading">Enter your meal</h1>
 <div class="mealeditform">
-<%= form_with scope: :customer, url: customers_path, local: true do |form| %>
+<%= form_with scope: :meal, url: meals_path, local: true do |form| %>
   <p>
-    <strong><%= form.label :type %></strong><br>
-    <%= form.text_field :type %>
+  <strong><%= form.label :type %></strong><br>
+  <%= form.collection_select :meal_category_id, @meal_categories, :id, :description %>
   </p>
 
   <p>
     <strong><%= form.label :description %></strong><br>
     <%= form.text_area :description %>
+  </p>
+
+  <p>
+    <strong><%= form.label :date %></strong><br>
+    <%= form.text_field :date %>
+
   </p>
 
   	<p>
@@ -21,7 +27,7 @@
 <% end %>
 </div>
 <div class ="backbutton">
-<%= button_to 'Back', root_path , method: :get, class:"btn btn-dark btn-lg" %>
+<%= button_to 'Back', meals_path , method: :get, class:"btn btn-dark btn-lg" %>
 </div>
 </div>
 </body>
