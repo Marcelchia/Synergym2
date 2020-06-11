@@ -5,15 +5,15 @@
 				<% @workouts.each do |workout| %>
 
 		  			<li class="workoutlist">
-		  				<%= @type %>
+		  				<%= workout.type %>
 		  			</li>
 
 		  			<li class="workoutlist">
-		  				<%= @description %>
+		  				<%= workout.description %>
 		  			</li>
 
 		  			<li class="workoutlist">
-		  				<%= @date %>
+		  				<%= workout.date %>
 		  			</li>
 
 
@@ -27,9 +27,9 @@
   	<%= submit_tag "Delete Workout" %>
   </p>
 <% end %>-->
-					<% end %>
 				<% end %>
+
 			</div>
 	</div>
-	<%= button_to "workouts", new_workout_path, method: :get, class: "btn btn-dark" %>
+	<%= button_to "Add workouts", new_workout_path, method: :get, class: "btn btn-dark" %>
 </body>

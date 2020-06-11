@@ -6,8 +6,7 @@
 
 <%= form_with scope: :workout, url: workouts_path, local: true do |form| %>
   <p>
-    <strong><%= form.label :type %></strong><br>
-    <%= form.text_field :type %>
+  <%= form.collection_select :workout_category_id, @workout_categories, :id, :description %>
   </p>
 
   <p>
@@ -23,7 +22,7 @@
 <% end %>
 </div>
 <div class ="backbutton">
-<%= button_to 'Back', home_path , method: :get, class:"btn btn-dark btn-lg" %>
+<%= button_to 'Back', workouts_path , method: :get, class:"btn btn-dark btn-lg" %>
 </div>
 </div>
 </body>

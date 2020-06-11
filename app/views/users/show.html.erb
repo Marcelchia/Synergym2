@@ -1,7 +1,18 @@
 <body class="userbody">
 	<div class = "container">
 	<div class=" jumbotron customerbody" >
+
+
+
 		<p class="usertext">
+
+		  <strong>Biometrics</strong>
+
+		 </p>
+
+		<p class="usertext">
+
+
 		  <strong>Name:</strong>
 
 		  <%= @user.name %>
@@ -21,20 +32,22 @@
 
 
 		<p class="usertext">
-		  <strong>BMI:</strong>
+		  <strong>Body Mass Index:</strong>
 		  <%=@bmi %>
 		</p>
 
 
 		<p class="usertext">
-		  <strong>Protein required:</strong>
+		  <strong>Daily Protein Intake:</strong>
 		  <%=@protein.to_s %>
 		</p>
 
 
 		<p class="usertext">
 		  <strong>Updated as of: </strong>
-		  <%=@updateddate %>
+
+
+		  <%=@updateddate.strftime("%m/%d/%Y")  %>
 		</p>
 
 

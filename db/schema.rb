@@ -10,17 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_10_180305) do
+ActiveRecord::Schema.define(version: 2020_06_11_091536) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "meal_categories", force: :cascade do |t|
+    t.string "description"
+  end
+
   create_table "meals", force: :cascade do |t|
-    t.string "type"
     t.string "description"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "meal_category_id"
+    t.index ["meal_category_id"], name: "index_meals_on_meal_category_id"
     t.index ["user_id"], name: "index_meals_on_user_id"
   end
 
@@ -39,12 +44,19 @@ ActiveRecord::Schema.define(version: 2020_06_10_180305) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "workout_categories", force: :cascade do |t|
+    t.string "description"
+  end
+
   create_table "workouts", force: :cascade do |t|
-    t.string "type"
     t.string "description"
     t.bigint "user_id"
     t.date "date"
+    t.bigint "workout_category_id"
     t.index ["user_id"], name: "index_workouts_on_user_id"
+    t.index ["workout_category_id"], name: "index_workouts_on_workout_category_id"
   end
 
+  add_foreign_key "meals", "meal_categories"
+  add_foreign_key "workouts", "workout_categories"
 end

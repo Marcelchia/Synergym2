@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     puts "================="
     puts "================="
     puts "================="
-
+    puts
     puts @updateddate
     puts @time
 

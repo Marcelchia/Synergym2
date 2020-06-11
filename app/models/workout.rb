@@ -3,4 +3,5 @@ class Workout < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
 
    belongs_to :user
+   belongs_to :workout_category
 end
