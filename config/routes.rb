@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   post '/workouts' => 'workouts#create'
   get '/workout/:id/edit', to: 'workouts#edit', as: 'update_workout'
   patch '/workouts/:id', to: 'workouts#update'
+
   get '/workouts/:id' => 'workouts#show' , as: 'workout'
   delete '/workouts/:id' => 'workouts#destroy'
 
@@ -26,7 +27,13 @@ Rails.application.routes.draw do
   get '/meals' => 'meals#index', as: 'meals'
   get '/meals/new' => 'meals#new', as: 'new_meal'
   post '/meals' => 'meals#create'
+
+   get '/meal/:id/edit', to: 'meals#edit', as: 'update_meal'
+  patch '/meals/:id', to: 'meals#update'
+
   get '/meals/:id' => 'meals#show' , as: 'meal'
+
+  delete '/meals/:id' => 'meals#destroy'
 
 
   get '/tips' => 'tips#index', as: 'tips'

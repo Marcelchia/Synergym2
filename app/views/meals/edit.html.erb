@@ -2,26 +2,26 @@
 	<div class="container">
 <h1 class="customereditheading">Edit Your Profile</h1>
 <div class="customereditform">
-<%= form_with scope: :user, model: @user, local: true do |form| %>
+<%= form_with scope: :meal, model: @meal, local: true do |form| %>
 
-  <p>
-    <strong><%= form.label :name %><br></strong>
-    <%= form.text_field :name %>
+   <p>
+    <strong><%= form.label :type %><br></strong>
+    <%= form.collection_select :meal_category_id, @meal_categories, :id, :description %>
   </p>
 
   <p>
-    <strong><%= form.label :address %><br></strong>
-    <%= form.text_area :address %>
+    <strong><%= form.label :description %><br></strong>
+    <%= form.text_area :description %>
   </p>
 
   <p>
-    <strong><%= form.label :lisence_number %><br></strong>
-    <%= form.text_field :lisence_number %>
+    <strong><%= form.label :calories %><br></strong>
+    <%= form.text_field :calories %>
   </p>
 
   <p>
-    <strong><%= form.label :lisence_expiry %><br></strong>
-    <%= form.text_field :lisence_expiry %>
+    <strong><%= form.label :date %><br></strong>
+    <%= form.text_field :date %>
   </p>
   <p>
     <%= form.submit class: "btn btn-dark"%>
@@ -30,7 +30,7 @@
 <% end %>
 </div>
 <div class ="backbutton">
-<%= button_to 'Back', root_path , method: :get, class:"btn btn-dark btn-lg" %>
+<%= button_to 'Back', meal_path , method: :get, class:"btn btn-dark btn-lg" %>
 </div>
 </div>
 </body>

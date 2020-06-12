@@ -6,7 +6,7 @@ class MealsController < ApplicationController
 
   def index
 
-     # @meals = Meal.where(user_id: current_user.id)
+     @meals = Meal.where(user_id: current_user.id)
     # @type = @workouts.type
     # @description = @workouts.description
     # @date = @workouts.date
@@ -43,17 +43,30 @@ end
   @meal = Meal.find(params[:id])
   @mealtype = @meal.meal_category.description
 
+
   end
 
 
   def edit
 
     @meal = Meal.find(params[:id])
+     @meal.user = current_user
+     @meal_categories = MealCategory.all
+
   end
 
   def update
-    @user = current_user
-    redirect_to profile_path if current_user.update(meal_params)
+    @meal = Meal.find(params[:id])
+    redirect_to meal_path if @meal.update(meal_params)
+  end
+
+   def destroy
+
+  @meal = Meal.find(params[:id])
+
+         @meal.destroy
+         redirect_to meals_path
+
   end
 
   private
@@ -64,7 +77,7 @@ end
     end
 
     def meal_params
-      params.require(:meal).permit(:meal_category_id, :description, :date)
+      params.require(:meal).permit(:meal_category_id, :description, :calories, :date)
     end
 
 

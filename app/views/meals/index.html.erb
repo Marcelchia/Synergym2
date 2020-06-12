@@ -2,25 +2,36 @@
 	<div class="container">
 		<h3 class="mealheading">Meals</h3>
 			<div class="mealtext">
-				<% current_user.meals.each do |meal| %>
 
-		  			<li class="meallist">
+				<% @meals.each do |meal| %>
 
+
+		  			<p class="meallist">
+		  				 <strong>Type:</strong>
 		  				<%= meal.meal_category.description %>
-		  			</li>
+		  			</p>
 
-		  			<li class="meallist">
+		  			<p class="meallist">
+		  				<strong>Description: </strong>
 		  				<%= meal.description %>
-		  			</li>
+		  			</p>
 
-		  			<li class="meallist">
+		  			<p class="meallist">
+		  				<strong>Date: </strong>
 		  				<%= meal.date %>
-		  			</li>
+		  			</p>
+
+		  			<p class="meallist">
+		  				<strong>Calories:</strong>
+		  				<%= meal.calories %>
+		  			</p>
 
 
-						<li class="meallist">
-		  				<button class="btn btn-dark"><%= link_to 'Show Details', meal_path(meal) , class:"buttontext" %></button>
-						</li>
+
+
+						<p class="meallist">
+		  				<button class="btn btn-white"><%= link_to 'Details', meal_path(meal) , class:"buttontext" %></button>
+						</p>
 
 
 				<% end %>

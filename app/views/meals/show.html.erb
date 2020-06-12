@@ -1,18 +1,25 @@
-<body class="customerbody">
+<body class="mealsbody">
 	<div class = "container">
 	<div class=" jumbotron customerbody" >
-		<p class="customertext">
+		<p class="mealtext">
+
 		  <strong>Type:</strong>
+
 		  <%= @mealtype %>
 
 		</p>
 
-		<p class="customertext">
-		  <strong>Description</strong>
+		<p class="mealtext">
+		  <strong>Description:</strong>
 		  <%= @meal.description %>
 		</p>
 
-		<p class="customertext">
+		<p class="mealtext">
+		  <strong>Calories: </strong>
+		  <%= @meal.calories %>
+		</p>
+
+		<p class="mealtext">
 		  <strong>Date: </strong>
 		  <%= @meal.date %>
 		</p>
@@ -31,6 +38,8 @@
 
 
 		<button class="btn btn-dark"><%= link_to 'Home', home_path , class:"buttontext" %></button>
+
+		<button class="btn btn-dark"><%= link_to 'Back', workouts_path , class:"buttontext" %></button>
 
 
 

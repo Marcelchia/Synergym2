@@ -14,6 +14,7 @@ MealCategory.create(description: "breakfast")
 MealCategory.create(description: "supper")
 MealCategory.create(description: "teabreak")
 MealCategory.create(description: "snack")
+MealCategory.create(description: "dessert")
 
 WorkoutCategory.create(description:"Chest")
 WorkoutCategory.create(description:"Arm")
