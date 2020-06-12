@@ -1,6 +1,7 @@
 
 Rails.application.routes.draw do
   devise_for :users
+
   get 'onepage/index'
   root to: "onepage#index", as: 'home'
 
@@ -32,7 +33,6 @@ Rails.application.routes.draw do
   patch '/meals/:id', to: 'meals#update'
 
   get '/meals/:id' => 'meals#show' , as: 'meal'
-
   delete '/meals/:id' => 'meals#destroy'
 
 

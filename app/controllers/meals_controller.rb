@@ -72,7 +72,7 @@ end
   private
     def check_user
       if !current_user
-        redirect_to root_path
+        redirect_to home_path
       end
     end
 
