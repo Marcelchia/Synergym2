@@ -9,27 +9,22 @@
 
 
 
-		  			<li class="workoutlist">
-		  			Type:
+		  			<p class="workoutlist">
+		  			Workout Day:
 		  				<%= workout.workout_category.description %>
-		  			</li>
+		  			</p>
 
 
 
-		  			<li class="workoutlist">
-		  			Description:
-		  				<%= workout.description %>
-		  			</li>
-
-		  			<li class="workoutlist">
+		  			<p class="workoutlist">
 		  				Date:
 		  				<%= workout.date %>
-		  			</li>
+		  			</p>
 
 
-						<li class="workoutlist">
-		  				<button class="btn btn-white"><%= link_to 'Show Details', workout_path(workout) , class:"buttontext" %></button>
-						</li>
+						<p class="workoutlist">
+		  				<button class="btn btn-dark"><%= link_to 'Details', workout_path(workout) , class:"buttontext" %></button>
+						</p>
 
 				<% end %>
 
