@@ -1,0 +1,26 @@
+<body class="tipnewbody">
+	<div class="container">
+
+<h1 class="tipnewheading">Enter New Tip</h1>
+<div class="tipnewform">
+
+<%= form_with scope: :tip, url: tips_path, local: true do |form| %>
+
+
+  <p>
+    <strong><%= form.label :description %></strong><br>
+    <%= form.text_area :description %>
+  </p>
+
+
+	<p>
+	  <%= form.submit class: "btn btn-dark"%>
+	</p>
+
+<% end %>
+</div>
+<div class ="backbutton">
+<%= button_to 'Back', tips_path , method: :get, class:"btn btn-dark btn-lg" %>
+</div>
+</div>
+</body>

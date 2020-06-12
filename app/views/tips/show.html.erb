@@ -1,0 +1,39 @@
+<body class="tipsbody">
+	<div class = "container">
+	<div class=" jumbotron customerbody" >
+		<p class="tiptext">
+
+
+
+		<p class="tiptext">
+		  <strong>Description:</strong>
+		  <%= @tip.description %>
+		</p>
+
+
+
+
+
+		<div class ="column-md , profilesubbutton">
+
+
+		<button class="btn btn-dark"><%= link_to 'Edit', update_tip_path , class:"buttontext" %></button>
+
+
+
+		<button class="btn btn-dark"><%= link_to 'Home', home_path , class:"buttontext" %></button>
+
+		<button class="btn btn-dark"><%= link_to 'Back', tips_path , class:"buttontext" %></button>
+
+
+
+		<button class="btn btn-dark"><%= link_to 'destroy', tip_path,
+		        method: :delete,
+		        data: { confirm: 'Are you sure?' }  , class:"buttontext" %></button>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</body>

@@ -1,3 +1,29 @@
+<body class="tipbody">
+	<div class="container">
+		<h3 class="tipheading">Tips</h3>
+			<div class="tiptext">
 
-<p>html</p>
-<%= javascript_pack_tag 'hello_react' %>
+				<% @tips.each do |tip| %>
+
+
+
+
+		  			<li class="tiplist">
+
+		  				<%= tip.description %>
+		  			</li>
+
+
+		  			<p class="tiplist">
+		  				<button class="btn btn-dark"><%= link_to 'Details', tip_path(tip) , class:"buttontext" %></button>
+						</p>
+
+
+
+
+				<% end %>
+
+			</div>
+	</div>
+	<%= button_to "Add tips", new_tip_path, method: :get, class: "btn btn-dark" %>
+</body>

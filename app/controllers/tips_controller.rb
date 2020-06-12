@@ -1,18 +1,56 @@
 class TipsController < ApplicationController
   before_action :authenticate_user!
   before_action :check_user
-  helper_method :group_by_day
+
 
 
 
   def index
 
-
-
   @tips = Tip.where(user_id: current_user.id)
 
   end
 
+
+  def new
+    @tips = Tip.all
+
+  end
+
+  def create
+
+      foobar = tip_params()
+
+      @tip = Tip.new(foobar)
+      @tip.user = current_user
+
+
+      if @tip.save
+        redirect_to @tip
+        else
+          #byebug
+        render 'new'
+    end
+
+end
+
+
+  def show
+
+  @tip = Tip.find(params[:id])
+
+
+
+  end
+
+ def destroy
+
+  @tip = Tip.find(params[:id])
+
+         @tip.destroy
+         redirect_to tips_path
+
+  end
 
 
     private
@@ -22,15 +60,12 @@ class TipsController < ApplicationController
       end
     end
 
-    def workout_params
-      params.require(:tips).permit(:description, :date)
-    end
+    def tip_params
+      params.require(:tip).permit(:description)
 
 
-    def group_by_day(obj)
-      sort_by_day = -> ( d ) {d.start.strftime("%A, %b %d %y")}
-      return obj.group_by(&sort_by_day)
     end
+
 
 
 end

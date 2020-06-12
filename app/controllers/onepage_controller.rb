@@ -4,8 +4,24 @@ class OnepageController < ApplicationController
 
   def index
 
-      @user = current_user
+      @user = User.find(current_user.id)
+
       @date = Date.today
+
+      @name = @user.name.capitalize
+
+
+
+
+
+
+      puts "========="
+       puts "========="
+       puts @user
+        puts @name
+
+        puts "========="
+         puts "========="
 
   end
 end

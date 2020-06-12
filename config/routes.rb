@@ -1,16 +1,19 @@
-
 Rails.application.routes.draw do
   devise_for :users
 
   get 'onepage/index'
   root to: "onepage#index", as: 'home'
 
+
+
   get '/profile/:id', to: 'users#show', as: 'profile'
   get '/profile/:id/edit', to: 'users#edit', as: 'update_profile'
-  patch '/profile/:id/edit', to: 'users#update', as: 'user'
+  patch '/profile/:d/iedit', to: 'users#update', as: 'user'
 
   get '/aboutus' => 'companyprofiles#index' , as: 'aboutus'
   get '/contactus' => 'ourcontacts#index' ,  as: 'contactus'
+
+
 
 
   get '/workouts' => 'workouts#index', as: 'workouts'
@@ -36,7 +39,17 @@ Rails.application.routes.draw do
   delete '/meals/:id' => 'meals#destroy'
 
 
+
+
   get '/tips' => 'tips#index', as: 'tips'
+  get '/tips/new' => 'tips#new', as: 'new_tip'
+  post '/tips' => 'tips#create'
+  get '/tips/:id/edit', to: 'tips#edit', as: 'update_tip'
+  patch '/tips/:d/edit', to: 'tips#update'
+
+
+  get '/tips/:id' => 'tips#show' , as: 'tip'
+  delete '/tips/:id' => 'tips#destroy'
 
 
 
