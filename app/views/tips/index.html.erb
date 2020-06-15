@@ -1,20 +1,35 @@
 <body class="tipbody">
 	<div class="container">
-		<h3 class="tipheading">Tips</h3>
+		<h3 class="tipheading">Notes</h3>
 			<%= button_to "Add tips", new_tip_path, method: :get, class: "btn btn-dark" %>
 
 			<div class="tiptext">
 
 
+				<table class="table table-dark">
+
+	<thead>
+    <tr>
+
+      <th scope="col">Notes</th>
+
+
+      </tr>
+  </thead>
+
+
+   <tbody>
+    <tr>
+
+
 				<% @tips.each do |tip| %>
 
 
+		  			<td class="tiplist">
+		  				<%= tip.description %></td>
 
-
-		  			<p class="tiplist">
-
-		  				<%= tip.description %>
-		  			</p>
+		  			  <td><button class="buttontextmeal"><%= link_to 'details', tip_path(tip) , class: "btn btn-white" %></button></td>
+    </tr>
 
 
 
