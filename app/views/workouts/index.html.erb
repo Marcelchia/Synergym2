@@ -1,6 +1,6 @@
-<body class="workoutbody">
+<body class="workoutindexbody">
 	<div class="container">
-		<h3 class="workoutheading">Workouts</h3>
+		<h1 class="workoutheading">Workout Lists</h1>
 
 	<%= button_to "Add workouts", new_workout_path, method: :get, class: "btn btn-dark" %>
 
@@ -24,7 +24,7 @@
 
 
 						<p class="workoutlist">
-		  				<button class="btn btn-dark"><%= link_to 'Details', workout_path(workout) , class: "btn btn-dark" %></button>
+		  				<button class="btn btn-dark"><%= link_to 'Details', workout_path(workout) , class: "buttontext" %></button>
 						</p>
 
 				<% end %>

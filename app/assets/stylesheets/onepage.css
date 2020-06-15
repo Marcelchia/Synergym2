@@ -19,7 +19,7 @@ background-image: url("backgroundimage.jpg");
 
   .buttontext{
   font-family: "Times", sans-serif;
-  font-color:white;
+  color:white;
 	}
 
 
@@ -46,7 +46,7 @@ background-image: url("backgroundimage.jpg");
 }
 
 
-/*loginpage*/
+/*signinpage*/
 
 .signupbutton {
   padding-left: 50px;
@@ -55,7 +55,7 @@ background-image: url("backgroundimage.jpg");
 .links {
   padding-right: 75px;
 }
-/*loginpage*/
+
 
 .signupsession {
   padding-left: 50px;
@@ -110,20 +110,49 @@ background-image: url("backgroundimage.jpg");
   justify-content: center;
  }
 
+/*aboutpage*/
+
+.aboutbody {
+	text-align: center;
+  font-family: "Times", sans-serif;
+}
+
+.aboutheading {
+	padding-top:60px;
+	padding-bottom:20px;
+	text-decoration: underline;
+}
+
+.aboutext {
+	padding-bottom:30px;
+	font-size:25px;
+}
+
+.contactheader {
+	padding-top:20px;
+	padding-bottom:5px;
+	text-decoration: underline;
+ }
+
 
 
  /*profilepage*/
 
-
+.profileeditheading {
+	font-size:35px;
+	padding-bottom:15px;
+}
  .biometrictext {
  	font-family: "Times", sans-serif;
  	padding-bottom:20px;
+ 	 font-size:35px;
+ 	 text-decoration: underline;
 	}
 
 	.usertext {
 	font-family: "Times", sans-serif;
 	padding-bottom:15px;
-	font-size: 20px;
+	font-size: 25px;
 	 }
 
 	 .profilebody {
@@ -137,6 +166,7 @@ background-image: url("backgroundimage.jpg");
 
   text-align: center;
   font-family: "Times", sans-serif;
+  font-size: 25px;
 	 }
 
 .backbutton {
@@ -146,13 +176,190 @@ background-image: url("backgroundimage.jpg");
 
 /*meals*/
 
+.mealheading {
+
+font-size:35px;
+text-decoration: underline;
+}
+
 .mealbody {
 	font-family: "Times", sans-serif;
-	  text-align: center;
-  font-family: "Times", sans-serif;
+	 text-align: center;
+ }
+
+ .mealnewbody {
+	font-family: "Times", sans-serif;
+	 text-align: center;
+
+
  }
 
 
+  .mealnewheading {
+  padding-top:20px;
+	padding-bottom:20px;
+	text-decoration: underline;
+ }
+
+ .mealtext {
+
+ padding-top:20px;
+ font-size:25px; }
+
+ .savebutton {
+ padding-top:20px;
+}
 
 
-	/*
+.mealeditbody {
+	font-family: "Times", sans-serif;
+	text-align: center;
+ }
+
+.mealeditheading {
+	padding-top:20px;
+	padding-bottom:20px;
+	text-decoration: underline;
+	font-size:35px;
+}
+
+
+ .mealeditform {
+
+ padding-top:15px;
+ font-size:25px; }
+
+/*workout*/
+
+.workoutindexbody {
+font-family: "Times", sans-serif;
+text-align: center;
+}
+
+.workoutheading{
+padding-top:20px;
+	padding-bottom:20px;
+	text-decoration: underline;
+	font-size:35px;
+}
+
+
+.workouttext {
+padding-top:30px;
+ font-size:25px;
+ }
+
+ .workoutnewbody{
+ 	font-family: "Times", sans-serif;
+text-align: center;
+ }
+
+
+ .workoutshowbody{
+ 	font-family: "Times", sans-serif;
+	text-align: center;
+ }
+
+
+ .workouteditbody {
+	font-family: "Times", sans-serif;
+	text-align: center;
+
+ }
+
+ .workouteditheading {
+ 		padding-top:20px;
+	padding-bottom:20px;
+	text-decoration: underline;
+	font-size:35px;
+
+ }
+
+ .workouteditform {
+ 	padding-top:10px;
+ 	font-size:25px;
+ }
+
+
+ /*tips*/
+
+
+ .tipbody {
+ 	font-family: "Times", sans-serif;
+	text-align: center;
+ }
+
+
+ .tipheading {
+ 	padding-top:20px;
+	padding-bottom:20px;
+	text-decoration: underline;
+	font-size:35px;
+ }
+
+ .tiptext{
+
+ 	padding-top:10px;
+ 	font-size:25px;
+ };
+
+
+ .tipnewbody {
+	font-family: "Times", sans-serif;
+	 text-align: center;
+  }
+
+
+  .tipnewheading {
+  padding-top:20px;
+	padding-bottom:20px;
+	text-decoration: underline;
+	font-size:35px;
+  }
+
+
+  .tipnewform {
+
+	 padding-top:10px;
+ 	font-size:25px;
+
+  }
+
+  .tipshowbody {
+		font-family: "Times", sans-serif;
+	text-align: center;
+
+  }
+
+
+  .tiptext {
+  		padding-top:10px;
+ 	font-size:25px;
+
+  }
+
+
+  .tipeditbody {
+	font-family: "Times", sans-serif;
+	text-align: center;
+
+ }
+
+
+.tipeditheading {
+		padding-top:20px;
+	padding-bottom:20px;
+	text-decoration: underline;
+	font-size:35px;
+}
+
+
+.tipeditform {
+	padding-top:10px;
+ 	font-size:25px;
+
+}
+
+
+
+	/*}

@@ -6,12 +6,14 @@ Rails.application.routes.draw do
 
 
 
+ get '/aboutus' => 'companyprofiles#index' , as: 'aboutus'
+
+
+
   get '/profile/:id', to: 'users#show', as: 'profile'
   get '/profile/:id/edit', to: 'users#edit', as: 'update_profile'
   patch '/profile/:id/edit', to: 'users#update', as: 'user'
 
-  get '/aboutus' => 'companyprofiles#index' , as: 'aboutus'
-  get '/contactus' => 'ourcontacts#index' ,  as: 'contactus'
 
 
   get '/workouts' => 'workouts#index', as: 'workouts'

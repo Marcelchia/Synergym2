@@ -1,7 +1,7 @@
-<body class="customereditbody">
+<body class="mealeditbody">
 	<div class="container">
-<h1 class="customereditheading">Edit Meal</h1>
-<div class="customereditform">
+<h1 class="mealeditheading">Edit Meal</h1>
+<div class="mealeditform">
 <%= form_with scope: :meal, model: @meal, local: true do |form| %>
 
    <p>
@@ -30,7 +30,7 @@
 <% end %>
 </div>
 <div class ="backbutton">
-<%= button_to 'Back', meal_path , method: :get, class:"btn btn-dark btn-lg" %>
+<%= button_to 'Back', meal_path , method: :get, class:"btn btn-dark" %>
 </div>
 </div>
 </body>

@@ -1,14 +1,14 @@
-<body class="tipnewbody">
+<body class="mealnewbody">
 	<div class="container">
 
-<h1 class="tipnewheading">Enter New Tip</h1>
+<h1 class="tipnewheading">Add New Tip</h1>
 <div class="tipnewform">
 
 <%= form_with scope: :tip, url: tips_path, local: true do |form| %>
 
 
   <p>
-    <strong><%= form.label :description %></strong><br>
+    <strong><%= form.label :Tip %></strong><br>
     <%= form.text_area :description %>
   </p>
 
@@ -20,7 +20,7 @@
 <% end %>
 </div>
 <div class ="backbutton">
-<%= button_to 'Back', tips_path , method: :get, class:"btn btn-dark btn-lg" %>
+<%= button_to 'Back', tips_path , method: :get, class:"btn btn-dark" %>
 </div>
 </div>
 </body>

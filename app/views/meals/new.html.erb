@@ -1,7 +1,7 @@
 <body class="mealnewbody">
 	<div class="container">
 
-<h1 class="mealnewheading">Enter your meal</h1>
+<h1 class="mealnewheading">Enter Your Meal</h1>
 <div class="mealeditform">
 <%= form_with scope: :meal, url: meals_path, local: true do |form| %>
   <p>
@@ -26,14 +26,14 @@
 
   </p>
 
-  	<p>
+  	<p class="savebutton">
 	  <%= form.submit class: "btn btn-dark"%>
 	</p>
 
 <% end %>
 </div>
 <div class ="backbutton">
-<%= button_to 'Back', meals_path , method: :get, class:"btn btn-dark btn-lg" %>
+<%= button_to 'Back', meals_path , method: :get, class:"btn btn-dark" %>
 </div>
 </div>
 </body>
