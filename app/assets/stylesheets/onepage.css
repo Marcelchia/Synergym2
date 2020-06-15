@@ -11,11 +11,62 @@ background-color: #ffffff;
  }
 
 
-
-
-
-
  .form {
  background-color:white;
 
   }
+/*loginpage*/
+
+  .loginpage {
+  background-color: #ffffff;
+}
+.loginpagetext {
+  font-family: "Times", sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.loginpageheading {
+  padding-top: 40px;
+  text-align: center;
+  font-family: "Times", sans-serif;
+  font-weight: bolder;
+  padding-bottom: 40px;
+}
+
+.signupbutton {
+  padding-left: 50px;
+}
+
+.links {
+  padding-right: 75px;
+}
+/*loginpage*/
+
+.signupsession {
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.signuppage {
+  background-color: #ffffff;
+}
+.signuppagetext {
+  font-family: "Times", sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.signuppageheading {
+  padding-top: 40px;
+  text-align: center;
+  font-family: "Times", sans-serif;
+  font-weight: bolder;
+  padding-bottom: 30px;
+}
+
+.signupbutton {
+  padding-left: 50px;
+}
