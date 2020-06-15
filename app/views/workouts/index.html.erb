@@ -6,28 +6,47 @@
 
 			<div class="workouttext">
 
+
+								<table class="table table-dark">
+
+	<thead>
+    <tr>
+
+      <th scope="col">Workout Day</th>
+
+      <th scope="col">Description</th>
+
+      <th scope="col">Date</th>
+
+      <th scope="col">Details</th>
+
+      </tr>
+  </thead>
+
+
+  <tbody>
+    <tr>
+
 				<% @workouts.each do |workout| %>
 
+		   <td><%= workout.workout_category.description %></td>
 
 
-		  			<p class="workoutlist">
-		  			Workout Day:
-		  				<%= workout.workout_category.description %>
-		  			</p>
+		   <td><%= workout.description %></td>
+
+
+      <td><%= workout.date %></td>
+
+      <td><button class="buttontextmeal"><%= link_to 'Details', workout_path(workout) , class: "btn btn-white" %></button></td>
+    </tr>
 
 
 
-		  			<p class="workoutlist">
-		  				Date:
-		  				<%= workout.date %>
-		  			</p>
-
-
-						<p class="workoutlist">
-		  				<button class="btn btn-dark"><%= link_to 'Details', workout_path(workout) , class: "buttontext" %></button>
-						</p>
 
 				<% end %>
+
+
+
 
 			</div>
 	</div>

@@ -8,6 +8,9 @@
 				<% current_meals_per_date = @meals[0].date %>
 				<% calories_daily_total = 0 %>
 
+
+
+
 				<% @meals.each do |meal| %>
 
 
@@ -24,40 +27,43 @@
 					<% calories_daily_total = meal.calories + calories_daily_total %>
 
 
+										<table class="table table-dark">
+
+	<thead>
+    <tr>
+
+      <th scope="col">Type</th>
+      <th scope="col">Description</th>
+      <th scope="col">Date</th>
+      <th scope="col">calories</th>
+      <th scope="col">details</th>
+
+    </tr>
+  </thead>
 
 
-		  			<p class="meallist">
-		  				 <strong>Type:</strong>
-		  				<%= meal.meal_category.description.capitalize %>
-		  			</p>
+  <tbody>
+    <tr>
 
-		  			<p class="meallist">
-		  				<strong>Description: </strong>
-		  				<%= meal.description %>
-		  			</p>
+			<td><%= meal.meal_category.description.capitalize %></td>
+      <td><%= meal.description %></td>
+      <td><%= meal.date %></td>
+      <td><%= meal.calories %></td>
+      <td><button class="buttontextmeal"><%= link_to 'Details', meal_path(meal) , class:"btn btn-white" %></button></td>
+    </tr>
 
-		  			<p class="meallist">
-		  				<strong>Date: </strong>
-		  				<%= meal.date %>
-		  			</p>
-
-		  			<p class="meallist">
-		  				<strong>Calories:</strong>
-		  				<%= meal.calories %>
-		  			</p>
+  </tbody>
+</table>
 
 
 
-
-						<p class="meallist">
-		  				<button class="btn btn-dark"><%= link_to 'Details', meal_path(meal) , class:"buttontext" %></button>
 						</p>
 
 
 				<% end %>
-				<strong>
+				<p>
 					Calories Total: <%= calories_daily_total %>
-				</strong>
+				</p>
 			</div>
 
 	</div>

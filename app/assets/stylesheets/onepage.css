@@ -176,6 +176,22 @@ background-image: url("backgroundimage.jpg");
 
 /*meals*/
 
+
+th {
+  text-align: left;
+}
+
+td {
+  height: 50px;
+  vertical-align: bottom;
+}
+
+.buttontextmeal {
+	background-color:white;
+	color:white;
+	border-radius:50%;
+}
+
 .mealheading {
 
 font-size:35px;
