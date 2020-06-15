@@ -1,6 +1,12 @@
-<body class="customereditbody">
+<body class="profileeditbody">
 	<div class="container">
-<h1 class="customereditheading">Edit Your Profile</h1>
+<h2 class="profileeditheading">
+
+
+<strong>Edit Profile</strong>
+
+
+</h2>
 <div class="customereditform">
 <%= form_with scope: :user, model: @user, local: true do |form| %>
 
@@ -26,7 +32,7 @@
 <% end %>
 </div>
 <div class ="backbutton">
-<%= button_to 'Back', home_path , method: :get, class:"btn btn-dark btn-lg" %>
+<%= button_to 'Back', home_path , method: :get, class:"btn btn-dark" %>
 </div>
 </div>
 </body>

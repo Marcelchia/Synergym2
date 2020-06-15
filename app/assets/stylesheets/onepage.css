@@ -17,8 +17,10 @@ background-image: url("backgroundimage.jpg");
 
   }
 
-  button{
-  font-family: "Times", sans-serif; }
+  .buttontext{
+  font-family: "Times", sans-serif;
+  font-color:white;
+	}
 
 
 
@@ -108,16 +110,6 @@ background-image: url("backgroundimage.jpg");
   justify-content: center;
  }
 
- .tipsbutton {
- 	font-family: "Times", sans-serif;
-  font-size: 50px;
-  text-decoration-color:white;
-  background-color:black;
-  display: flex;
-  border-radius: 50%;
-  justify-content: center;
- }
-
 
 
  /*profilepage*/
@@ -137,4 +129,24 @@ background-image: url("backgroundimage.jpg");
 	 .profilebody {
 
   text-align: center;
+  font-family: "Times", sans-serif;
 	  }
+
+
+.profileeditbody {
+	font-family: "Times", sans-serif;
+  text-align: center;
+  font-family: "Times", sans-serif;
+	 }
+
+.backbutton {
+ padding-top:10px;
+}
+
+.buttons {
+		 display: flex;
+  justify-content: center;
+ }
+
+
+	/*
