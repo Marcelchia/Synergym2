@@ -7,9 +7,12 @@ class MealsController < ApplicationController
   def index
 
      @meals = Meal.where(user_id: current_user.id)
+#       @date = meal_params[:date]
+
+Meal.select("date(created_at) as ordered_date, sum(price) as total_price").group("date(created_at)")
     # @type = @workouts.type
     # @description = @workouts.description
-    # @date = @workouts.date
+    # @date = @meals.date
   end
 
   def new

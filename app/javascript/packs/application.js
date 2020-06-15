@@ -6,6 +6,12 @@
 require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
+//=require bootstrap-datepicker
+//=require jquery3
+//=require jquery_ujs
+//=require bootstrap
+//=require jquery.ui.datepicker
+
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
