@@ -1,42 +1,54 @@
 
+<div class="container" >
 
+<div class="homepagetext">
+<strong>
+		<h1> Welcome
+			<%= @name %>
+		</h1>
+</strong>
 
-<h1> Welcome
-	<%= @name %>
+</div>
 
-	</h1>
+<div class="homepagetext">
 
+		<h3>
+			<%= @date %>
 
-<h2> Today's date :
-	<%= @date %>
+		</h3>
+</div>
 
-</h2>
+<div class="images">
 
-
+	<div class="image1">
 
 <%= link_to href ='/meals' do %>
 
 <%= image_tag 'meals.png' ,width: 250, height: 250%>
 <% end %>
 
+	</div>
 
-
+	<div class='image2'>
 
 <%= link_to href ='/workouts' do %>
 
 <%= image_tag 'workout.jpg',width: 250, height: 250%>
 
 <% end %>
+	</div>
 
 
-
-
-
+	<div class ='image3'>
 <%= link_to href ='/tips' do %>
 
 <%= image_tag 'tips.jpg',width: 300, height: 300 %>
 
 <% end %>
 
+</div>
 
-<%= javascript_pack_tag 'hello_react' %>
+</div>
+
+
+</div>

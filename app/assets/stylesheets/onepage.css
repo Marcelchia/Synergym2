@@ -15,6 +15,10 @@ background-color: #ffffff;
  background-color:white;
 
   }
+
+
+
+
 /*loginpage*/
 
   .loginpage {
@@ -34,6 +38,9 @@ background-color: #ffffff;
   font-weight: bolder;
   padding-bottom: 40px;
 }
+
+
+/*loginpage*/
 
 .signupbutton {
   padding-left: 50px;
@@ -70,3 +77,27 @@ background-color: #ffffff;
 .signupbutton {
   padding-left: 50px;
 }
+
+/*homepage*/
+
+.homepagetext {
+  font-family: "Times", sans-serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.images {
+	 display: flex;
+  justify-content: center;
+  padding-top:80px;
+  padding-bottom: 50px;
+}
+
+.image1 {
+	padding-right:70px;
+}
+
+.image3 {
+	padding-left:50px;
+ }
