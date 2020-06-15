@@ -7,10 +7,10 @@ require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
 //=require bootstrap-datepicker
-//=require jquery3
 //=require jquery_ujs
-//=require bootstrap
-//=require jquery.ui.datepicker
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
 
 
 
