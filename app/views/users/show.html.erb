@@ -1,14 +1,16 @@
 <body class="userbody">
 	<div class = "container">
-	<div class=" jumbotron customerbody" >
+
+	<div class = "profilebody">
 
 
 
-		<p class="usertext">
+
+		<h2 class="biometrictext">
 
 		  <strong>Biometrics</strong>
 
-		 </p>
+		 </h2>
 
 		<p class="usertext">
 
@@ -20,7 +22,7 @@
 		</p>
 
 		<p class="usertext">
-		  <strong>Height</strong>
+		  <strong>Height:</strong>
 		    <%= @user.height.to_s + "cm" %>
 		</p>
 
@@ -56,17 +58,16 @@
 
 
 
+		<button class="buttontext"><%= link_to 'Edit', update_profile_path %></button>
 
-		<button class="btn btn-dark"><%= link_to 'Edit', update_profile_path , class:"buttontext" %></button>
 
-
-		<%= button_to 'Back', home_path , method: :get, class:"btn btn-dark btn-lg" %>
-
+		<%= button_to 'Back', home_path , method: :get, class:"buttontext" %>
 
 
 
+</div>
 
 
-	</div>
+
 	</div>
 </body>
