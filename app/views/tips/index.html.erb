@@ -1,7 +1,10 @@
 <body class="tipbody">
 	<div class="container">
 		<h3 class="tipheading">Tips</h3>
+			<%= button_to "Add tips", new_tip_path, method: :get, class: "btn btn-dark" %>
+
 			<div class="tiptext">
+
 
 				<% @tips.each do |tip| %>
 
@@ -25,5 +28,5 @@
 
 			</div>
 	</div>
-	<%= button_to "Add tips", new_tip_path, method: :get, class: "btn btn-dark" %>
+
 </body>

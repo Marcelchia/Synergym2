@@ -14,8 +14,6 @@ Rails.application.routes.draw do
   get '/contactus' => 'ourcontacts#index' ,  as: 'contactus'
 
 
-
-
   get '/workouts' => 'workouts#index', as: 'workouts'
   get '/workouts/new' => 'workouts#new', as: 'new_workout'
   post '/workouts' => 'workouts#create'
@@ -45,7 +43,7 @@ Rails.application.routes.draw do
   get '/tips/new' => 'tips#new', as: 'new_tip'
   post '/tips' => 'tips#create'
   get '/tips/:id/edit', to: 'tips#edit', as: 'update_tip'
-  patch '/tips/:d/edit', to: 'tips#update'
+  patch '/tips/:id', to: 'tips#update'
 
 
   get '/tips/:id' => 'tips#show' , as: 'tip'

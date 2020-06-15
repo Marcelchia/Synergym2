@@ -41,6 +41,23 @@ end
 
 
 
+  def edit
+
+    @tip = Tip.find(params[:id])
+     @tip.user = current_user
+
+
+  end
+
+  def update
+
+    @tip = Tip.find(params[:id])
+
+    redirect_to tip_path if @tip.update(tip_params)
+  end
+
+
+
   end
 
  def destroy
