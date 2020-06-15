@@ -1,9 +1,29 @@
 <body class="mealbody">
 	<div class="container">
+
 		<h3 class="mealheading">Meals</h3>
+		<%= button_to "Add meals", new_meal_path, method: :get, class: "btn btn-dark" %>
 			<div class="mealtext">
 
+				<% current_meals_per_date = @meals[0].date %>
+				<% calories_daily_total = 0 %>
+
 				<% @meals.each do |meal| %>
+
+
+				<% if current_meals_per_date != meal.date %>
+
+					Calories Total: <%= calories_daily_total %>
+
+					<% calories_daily_total = 0 %>
+
+					<% current_meals_per_date = meal.date %>
+
+				<%end %>
+
+					<% calories_daily_total = meal.calories + calories_daily_total %>
+
+
 
 
 		  			<p class="meallist">
@@ -35,8 +55,9 @@
 
 
 				<% end %>
-
+					Calories Total: <%= calories_daily_total %>
 			</div>
+
 	</div>
-	<%= button_to "Add meals", new_meal_path, method: :get, class: "btn btn-dark" %>
+
 </body>

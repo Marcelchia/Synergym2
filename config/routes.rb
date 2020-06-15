@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get '/profile/:id', to: 'users#show', as: 'profile'
   get '/profile/:id/edit', to: 'users#edit', as: 'update_profile'
-  patch '/profile/:d/iedit', to: 'users#update', as: 'user'
+  patch '/profile/:id/edit', to: 'users#update', as: 'user'
 
   get '/aboutus' => 'companyprofiles#index' , as: 'aboutus'
   get '/contactus' => 'ourcontacts#index' ,  as: 'contactus'

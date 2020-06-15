@@ -2,6 +2,7 @@
 	<div class="container">
 		<h3 class="workoutheading">Workouts</h3>
 
+	<%= button_to "Add workouts", new_workout_path, method: :get, class: "btn btn-dark" %>
 
 			<div class="customerbookingtext">
 
@@ -23,12 +24,12 @@
 
 
 						<p class="workoutlist">
-		  				<button class="btn btn-dark"><%= link_to 'Details', workout_path(workout) , class:"buttontext" %></button>
+		  				<button class="btn btn-dark"><%= link_to 'Details', workout_path(workout) , class: "btn btn-dark" %></button>
 						</p>
 
 				<% end %>
 
 			</div>
 	</div>
-	<%= button_to "Add workouts", new_workout_path, method: :get, class: "btn btn-dark" %>
+
 </body>

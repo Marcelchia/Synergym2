@@ -7,10 +7,11 @@ class WorkoutsController < ApplicationController
   def index
 
     @workouts = Workout.where(user_id: current_user.id)
-    @date =
 
 
-    puts "========"
+
+
+
      # @exercise = @workouts.workout_category.description
 
 
