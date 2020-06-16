@@ -6,17 +6,8 @@
 			<div class="mealtext">
 
 
-
-
-
-				<% current_meals_per_date = @meals[0].date %>
+				<% current_meals_per_date = @meals[0].date unless @meals.length == 0 %>
 				<% calories_daily_total = 0 %>
-
-
-
-
-
-
 
 				<% @meals.each do |meal| %>
 
