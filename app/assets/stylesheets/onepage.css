@@ -22,6 +22,11 @@ background-image: url("backgroundimage.jpg");
   color:white;
 	}
 
+	.buttontext:hover{
+ border:4px solid black;
+	box-shadow: 1px 1px 1px 1px
+}
+
 
 	footer{
 	font-family: "Times", sans-serif;
