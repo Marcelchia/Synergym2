@@ -5,8 +5,15 @@
 		<%= button_to "Add meals", new_meal_path, method: :get, class: "btn btn-dark" %>
 			<div class="mealtext">
 
+
+
+
+
 				<% current_meals_per_date = @meals[0].date %>
 				<% calories_daily_total = 0 %>
+
+
+
 
 
 
@@ -35,8 +42,8 @@
       <th scope="col">Type</th>
       <th scope="col">Description</th>
       <th scope="col">Date</th>
-      <th scope="col">calories</th>
-      <th scope="col">details</th>
+      <th scope="col">Calories</th>
+
 
     </tr>
   </thead>
