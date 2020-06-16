@@ -139,11 +139,18 @@ background-image: url("backgroundimage.jpg");
 	font-size:25px;
 }
 
+.motto {
+font-style:italic;
+padding-bottom:30px;
+ }
+
 .contactheader {
 	padding-top:20px;
 	padding-bottom:5px;
 	text-decoration: underline;
  }
+
+
 
 
 
