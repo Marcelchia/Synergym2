@@ -1,24 +1,59 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Post Mortem
 
-Things you may want to cover:
 
-* Ruby version
+Approach and Process
 
-* System dependencies
+What in my process and approach to this project would I do differently next time?
 
-* Configuration
+A: Incorporate react function properly, Understanding how different APIs work
 
-* Database creation
 
-* Database initialization
+What in my process and approach to this project went well that I would repeat next time?
 
-* How to run the test suite
+	A: getting different components done separately before proceeding. 
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+Code and Code Design
+
+
+What in my code and program design in the project would I do differently next time?
+
+
+	A: Use react, include respective buttons on show page , calender date, cards display
+
+
+What in my code and program design in the project went well? Is there anything I would do the same next time?
+
+
+	A: Formatting of the CSS , data table. 
+
+
+
+For each, please include code examples.
+
+Code snippet up to 20 lines.
+Code design documents or architecture drawings / diagrams.
+
+
+
+
+
+SEI Unit 4 Post Mortem
+
+What habits did I use during SEI that helped me, that I will take on to my future coding projects?
+
+	A: Reviewing ERD and wireframe. Planning approach of different rendering pages.
+
+
+
+What habits did I have during SEI I can improve on that I will try to change on future projects?
+
+	A: Code indentation (JS Prettier) , think more in terms of psuedo codes, console log (more often) , googling skills
+
+
+How is the overall level of the course overall? (instruction, course materials, etc.)
+
+	A: Managed to seek help from people
