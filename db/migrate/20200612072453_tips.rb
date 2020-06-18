@@ -5,7 +5,7 @@ class Tips < ActiveRecord::Migration[6.0]
 
       t.string :description
       t.references :user
-      t.date :date
+
 
     end
   end
