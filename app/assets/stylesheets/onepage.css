@@ -24,7 +24,7 @@ background-image: url("backgroundimage.jpg");
 
 	.buttontext:hover{
  border:4px solid black;
-	box-shadow: 1px 1px 1px 1px
+	box-shadow: 1px 1px 1px 1px;
 }
 
 
@@ -238,7 +238,8 @@ text-decoration: underline;
  .mealtext {
 
  padding-top:20px;
- font-size:25px; }
+ font-size:25px;
+}
 
  .savebutton {
  padding-top:20px;
@@ -393,7 +394,3 @@ text-align: center;
  	font-size:25px;
 
 }
-
-
-
-	/*}
